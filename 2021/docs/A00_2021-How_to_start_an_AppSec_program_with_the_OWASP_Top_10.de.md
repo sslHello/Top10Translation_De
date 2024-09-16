@@ -1,44 +1,58 @@
-# So starten Sie ein AppSec-Programm mit den OWASP Top 10
+# Wie man ein Programm für Anwendungssicherheit mit den OWASP Top 10 aufbaut 
 
-Bisher waren die OWASP Top 10 nie als Grundlage für ein AppSec-Programm konzipiert. Allerdings ist es für viele Unternehmen, die gerade erst am Anfang ihrer Reise zur Anwendungssicherheit stehen, unerlässlich, irgendwo anzufangen.
-Die OWASP Top 10 2021 sind ein guter Anfang als Grundlage für Checklisten usw., aber sie allein reichen nicht aus.
+Die OWASP Top 10 war nie als Grundlage für ein Programm zur Anwendungssicherheit (AppSec) gedacht. 
+Für viele Organisationen, die sich gerade am Anfang ihrer Reise in die Anwendungssicherheit befinden, ist es jedoch wichtig, irgendwo anzufangen.
+Die OWASP Top 10 2021 bilden einen guten Ausgangspunkt für Checklisten usw., sind aber an sich nicht ausreichend.
 
-## Stufe 1. Identifizieren Sie die Lücken und Ziele Ihres Appsec-Programms
+## Schritt 1. Identifizieren Sie die Lücken und Ziele Ihres AppSec-Programms
 
-Viele Anwendungssicherheitsprogramme (AppSec) übernehmen sich häufig und versuchen in zu großen Schritten ihr Ziel zu erreichen. Diese Bemühungen sind zum Scheitern verurteilt. Wir empfehlen CISOs und AppSec-Führungskräften nachdrücklich, das [OWASP Software Assurance Maturity Model (SAMM)] (https://owaspsamm.org) zu verwenden, um über einen Zeitraum von ein bis drei Jahren Schwachstellen und Bereiche mit Verbesserungspotenzial zu identifizieren. Der erste Schritt besteht darin, zu bewerten, wo Sie sich gerade befinden, die Lücken in Governance, Design, Implementierung, Verifizierung und Betrieb zu identifizieren, die Sie sofort beheben müssen, im Vergleich zu denen, die warten können, und der Implementierung oder Verbesserung der fünfzehn OWASP SAMM-Sicherheitspraktiken Priorität einzuräumen. OWASP SAMM kann Ihnen dabei helfen, Verbesserungen in Ihren Software-Assurance-Bemühungen aufzubauen und zu messen.
+Viele Anwendungssicherheitsprogramme (AppSec) übernehmen sich häufig und versuchen in zu großen Schritten ihr Ziel zu erreichen. Diese Bemühungen sind zum Scheitern verurteilt. Wir empfehlen CISOs und AppSec-Führungskräften dringend, das [OWASP Software Assurance Maturity Model (SAMM)](https://owaspsamm.org) einzusetzen, um Schwachstellen und Verbesserungspotenziale über einen Zeitraum von 1-3 Jahren zu identifizieren. Der erste Schritt besteht darin, den aktuellen Stand der Dinge zu bewerten: *Jene* Schwächen in den Bereichen Governance, Design, Implementierung, Verifizierung und Betrieb zu identifizieren, die sofort behoben werden müssen, und jene, die noch warten können, und die Implementierung oder Verbesserung der 15 OWASP SAMM-Sicherheitspraktiken zu priorisieren. OWASP SAMM kann beim Aufbau und Messen von Verbesserungen bei Ihren Software Assurance-Bemühungen hilfreich sein.
 
-## Stufe 2. Erarbeiten Sie eine gepflasterte Strasse für einen sicheren Entwicklungslebenszyklus
+## Schritt 2. Ebnen Sie den Weg für einen sicheren Entwicklungs-Lebenszyklus (SDLC)
 
-Das Konzept der gepflasterten Straße ist traditionell eine Domäne sogenannter Einhörner und stellt die einfachste Möglichkeit dar, die größtmögliche Wirkung zu erzielen und AppSec-Ressourcen mit der Geschwindigkeit des Entwicklungsteams zu skalieren, die jedes Jahr nur zunimmt.
+Das Konzept des geebneten Weges, das traditionell den sogenannten "Einhörnern" vorbehalten war, ist der einfachste Weg, um die größte Wirkung zu erzielen und die AppSec-Ressourcen mit der Geschwindigkeit des Entwicklungsteams zu skalieren, die von Jahr zu Jahr zunimmt.
 
-Das Konzept der gepflasterten Straße lautet „Der einfachste Weg ist auch der sicherste Weg“ und sollte eine Kultur intensiver Partnerschaften zwischen dem Entwicklungsteam und dem Sicherheitsteam beinhalten, vorzugsweise so, dass sie ein und dasselbe Team sind. Die asphaltierte Straße zielt darauf ab, unsichere Alternativen kontinuierlich zu verbessern, zu messen, zu erkennen und zu ersetzen, indem sie über eine unternehmensweite Bibliothek von Drop-in-gesicherten Ersatzteilen verfügt, mit Werkzeugen, die dabei helfen, zu erkennen, wo durch die Einführung der asphaltierten Straße Verbesserungen erzielt werden können. Dies ermöglicht es vorhandenen Entwicklungstools, über unsichere Builds zu berichten und Entwicklungsteams dabei zu helfen, unsichere Alternativen selbst zu korrigieren.
+Das Konzept des geebneten Weges lautet: "Der einfachste Weg ist auch der sicherste Weg" und sollte eine Kultur tiefer Partnerschaften zwischen dem Entwicklungsteam und dem Sicherheitsteam beinhalten, vorzugsweise so, dass sie ein und dasselbe Team sind. Der geebnete Weg hat zum Ziel, unsichere Alternativen kontinuierlich zu verbessern, zu messen, zu erkennen und zu ersetzen, indem eine unternehmensweite Bibliothek von sicheren Ersatzlösungen zur Verfügung gestellt wird, mit Werkzeugen, die dabei helfen zu erkennen, wo Verbesserungen durch die Übernahme des geebneten Weges möglich sind. Auf diese Weise können vorhandene Entwicklungstools unsichere Builds aufzeigen und den Entwicklungsteams helfen, sich selbst von unsicheren Alternativen zu lösen.
 
-Die asphaltierte Straße scheint eine große Herausforderung zu sein, aber sie sollte im Laufe der Zeit schrittweise gebaut werden. Es gibt andere Formen von Appsec-Programmen, insbesondere den Microsoft Agile Secure Development Lifecycle. Nicht jede Methodik eines Appsec-Programms passt zu jedem Unternehmen.
+Der geebnete Weg mag anstrengend erscheinen, aber er sollte im Laufe der Zeit schrittweise aufgebaut werden. Es gibt noch andere Formen von Appsec-Programmen, insbesondere den Agile Secure Development Lifecycle von Microsoft. Nicht jede Appsec-Programm-Methodik passt zu jedem Unternehmen.
 
-## Stufe 3. Setzen Sie den gepflasterten Weg mit Ihren Entwicklungsteams um
+## Stufe 3. Realisierung des geebneten Wegs mit Ihren Entwicklungsteams
 
-Gepflasterte Straßen werden mit Zustimmung und direkter Beteiligung der zuständigen Entwicklungs- und Betriebsteams gebaut. Der gepflasterte Weg sollte strategisch auf das Unternehmen ausgerichtet sein und dazu beitragen, sicherere Anwendungen schneller bereitzustellen. Die Entwicklung der gepflasterten Straße sollte eine ganzheitliche Übung sein, die das gesamte Unternehmens- oder Anwendungsökosystem abdeckt, und nicht wie früher eine pro-App-Lösung.
+Der geebnete Weg wird mit dem Einverständnis und der direkten Beteiligung der zuständigen Entwicklungs- und Betriebsteams umgesetzt. Der Weg sollte strategisch auf das Unternehmen abgestimmt sein und dazu beitragen, sichere Anwendungen schneller bereitzustellen. Die Entwicklung des Weges sollte eine ganzheitliche Maßnahme sein, die das gesamte Unternehmens- oder Anwendungsökosystem abdeckt, und nicht nur ein einzelnes anwendungsbezogenes Notpflaster wie in vergangenen Zeiten.
 
-## Stufe 4. Migrieren Sie alle kommenden und vorhandenen Anwendungen auf die asphaltierte Straße
+## Stufe 4. Migrieren Sie alle zukünftigen und bestehenden Anwendungen auf den geebneten Weg
 
-Fügen Sie bei der Entwicklung Tools zur Erkennung befestigter Straßen hinzu und stellen Sie Entwicklungsteams Informationen zur Verfügung, um die Sicherheit ihrer Anwendungen zu verbessern, indem sie Elemente der befestigten Straße direkt übernehmen können. Sobald ein Aspekt der asphaltierten Straße übernommen wurde, sollten Organisationen kontinuierliche Integrationsprüfungen implementieren, die vorhandenen Code und Check-Ins überprüfen, die verbotene Alternativen verwenden, und den Build oder Check-In warnen oder ablehnen. Dadurch wird verhindert, dass sich unsichere Optionen im Laufe der Zeit in den Code einschleichen, wodurch technische Schulden und eine fehlerhafte unsichere Anwendung vermieden werden. Solche Warnungen sollten auf die sichere Alternative verweisen, damit das Entwicklungsteam sofort die richtige Antwort erhält. Sie können die befestigte Straßenkomponente schnell umgestalten und übernehmen.
+Fügen Sie Tools zur Erkennung von geebneten Wegen hinzu, während Sie sie entwickeln, und stellen Sie den Entwicklungsteams Informationen zur Verfügung, damit sie die Sicherheit ihrer Anwendungen verbessern können, indem sie Elemente des geebneten Weges direkt übernehmen können. Sobald ein Aspekt des geebneten Weges übernommen wurde, sollten Unternehmen Prüfungen zur kontinuierlichen Integration implementieren, die bestehenden und Check-Ins von neuem Code auf verbotene Alternativen untersuchen und beim Build oder Check-In Warnungen ausgeben oder diese ablehnen. Auf diese Weise wird verhindert, dass sich im Laufe der Zeit unsichere Optionen in den Code einschleichen, wodurch technische Altlasten und eine fehlerhafte, unsichere Anwendung vermieden werden. Solche Warnhinweise sollten auf die sichere Alternative verweisen, damit das Entwicklungsteam sofort die richtige Antwort erhält. So kann das Entwicklungsteam sofort die Korrektur vornehmen und die Komponente für den geebneten Weg rasch übernehmen.
 
-## Stufe 5. Testen Sie, ob die asphaltierte Straße die in den OWASP Top 10 festgestellten Probleme gemildert hat
+## Schritt 5. Nachprüfen, ob der geebnete Weg die in den OWASP Top 10 genannten Probleme behoben hat
 
-Gepflasterte Straßenkomponenten sollten ein wichtiges Problem der OWASP Top 10 ansprechen, zum Beispiel die Frage, wie anfällige Komponenten automatisch erkannt oder repariert werden können, oder ein IDE-Plugin für die statische Codeanalyse, um Injektionen zu erkennen, oder noch besser, eine Bibliothek zu verwenden, die bekanntermaßen sicher gegen Injektionen ist. Je mehr dieser sicheren Ersatzprodukte den Teams zur Verfügung gestellt werden, desto besser. Eine wichtige Aufgabe des appsec-Teams besteht darin, dafür zu sorgen, dass die Sicherheit dieser Komponenten kontinuierlich evaluiert und verbessert wird. Sobald sie verbessert sind, sollte ein Kommunikationsweg mit den Verbrauchern der Komponente darauf hinweisen, dass ein Upgrade erfolgen sollte, vorzugsweise automatisch, wenn nicht, wird es zumindest auf einem Dashboard oder ähnlichem hervorgehoben.
+Die Komponenten des geebneten Weges sollten sich mit einem wichtigen Aspekt der OWASP Top 10 befassen, z. B. mit der automatischen Erkennung oder Beseitigung von Sicherheitslücken in Komponenten, mit einem IDE-Plugin für die statische Codeanalyse zur Erkennung von Injections oder - noch besser - mit der Verwendung einer Bibliothek, die als sicher gegen Injections bekannt ist. Je mehr dieser sicheren Drop-in-Ersatzlösungen den Teams zur Verfügung gestellt werden, desto besser. Eine wichtige Aufgabe des Appsec-Teams ist es, dafür zu sorgen, dass die Sicherheit dieser Komponenten kontinuierlich bewertet und verbessert wird. Sobald die Sicherheit verbessert wurde, sollte eine Kommunikation mit den Nutzende der Komponente stattfinden, die darauf aufmerksam macht, dass ein Upgrade durchgeführt werden sollte, vorzugsweise automatisch, aber wenn nicht, sollte dies zumindest auf einem Dashboard oder ähnlichem deutlich gemacht werden.
 
-## Stufe 6. Bauen Sie Ihr Programm in ein ausgereiftes AppSec-Programm um
 
-Sie dürfen nicht bei den OWASP Top 10 stehen bleiben. Sie deckt nur 10 Risikokategorien ab. Wir empfehlen Organisationen nachdrücklich, den Application Security Verification Standard zu übernehmen und je nach Risikostufe der entwickelten Anwendungen nach und nach befestigte Straßenkomponenten und Tests für Level 1, 2 und 3 hinzuzufügen.
+## Stufe 6. Bauen Sie Ihr Programm zu einem ausgereiften AppSec-Programm aus
 
-## Darüber hinausgehen
+Sie dürfen nicht bei den OWASP Top 10 aufhören. Diese decken nur 10 Risikokategorien ab. Wir empfehlen Unternehmen dringend, den Application Security Verification Standard zu übernehmen und schrittweise Komponenten und Tests für die Stufen 1, 2 und 3 hinzuzufügen, je nach Risikoniveau der entwickelten Anwendungen.
 
-Alle großartigen AppSec-Programme gehen über das Nötigste hinaus. Jeder muss weitermachen, wenn wir die Appsec-Schwachstellen jemals in den Griff bekommen wollen.
 
-- **Konzeptionelle Integrität**. Ausgereifte AppSec-Programme müssen ein Konzept einer Sicherheitsarchitektur enthalten, sei es eine formelle Cloud- oder Unternehmenssicherheitsarchitektur oder eine Bedrohungsmodellierung
+## Weitere Schritte
 
-- **Automatisierung und Skalierung**. Ausgereifte AppSec-Programme versuchen, so viele ihrer Ergebnisse wie möglich zu automatisieren, indem sie Skripte verwenden, um komplexe Penetrationstestschritte zu emulieren, statische Code-Analysetools, die den Entwicklungsteams direkt zur Verfügung stehen, Entwicklerteams bei der Erstellung von Appsec-Einheits- und Integrationstests unterstützen und vieles mehr.
+Alle guten Programme zur Anwendungssicherheit gehen über das Minimum hinaus.
+Alle Beteiligten müssen weiterarbeiten, um die Schwachstellen in den Anwendungen jemals in den Griff zu bekommen.
 
-- **Kultur**. Ausgereifte AppSec-Programme versuchen, das unsichere Design auszubauen und die technischen Schulden des vorhandenen Codes zu beseitigen, indem sie Teil des Entwicklungsteams und nicht daneben stehen. AppSec-Teams, die Entwicklungsteams als „wir“ und „sie“ betrachten, sind zum Scheitern verurteilt.
+-   **Konzeptuelle Integrität**. Ausgereifte AppSec-Programme müssen über ein Konzept sicherer Architektur verfügen,
+egal ob eine formale Cloud- oder Enterprise-Architektur oder Bedrohungsanalyse.
 
--   **Ständige Verbesserung**. Ausgereifte AppSec-Programme streben danach, sich ständig zu verbessern. Wenn etwas nicht funktioniert, hören Sie damit auf. Wenn etwas schwerfällig oder nicht skalierbar ist, arbeiten Sie daran, es zu verbessern. Wenn etwas von den Entwicklungsteams nicht verwendet wird und keine oder nur begrenzte Auswirkungen hat, machen Sie etwas anderes. Nur weil wir seit den 1970er Jahren Tests wie "Desk checks" durchführen, heißt das nicht, dass es eine gute Idee ist. Messen, bewerten und dann aufbauen oder verbessern.
+-   **Automatisierung und Skalierung**.
+    Ausgereifte AppSec-Programme versuchen möglichst viele Liefergegenstände zu automatisieren:
+Skripte um komplexe Penetrationstest-Schritte zu emulieren,
+Statische Codeanalyse direkt den Entwicklungsteams bereitstellen,
+Unterstützung für Entwicklungsteams um sicherheitsspezifische Unit- und Integrationstests zu verfassen, etc.
+
+-   **Kultur**.
+    Ausgereifte AppSec-Programme versuchen, unsicheres Design auszuschließen
+und technische Schulden in Bestands-Code dadurch zu eliminieren,
+dass sie Bestandteil der Entwicklung sind und nicht daneben stehen.
+AppSec-Teams, die Entwicklungsteams als "die" und "wir" betrachten, sind zum Scheitern verurteilt.
+
+- **Kontinuierliche Verbesserung**. 
+Ausgereifte AppSec-Programme versuchen, sich ständig zu verbessern. Wenn etwas nicht funktioniert, dann beenden Sie es. Wenn etwas klobig ist oder nicht skaliert , muss es verbessert werden. Falls etwas von den Entwicklungsteams nicht verwendet wird und keine oder nur geringe Auswirkungen hat, sollte etwas anderes gemacht werden. Nur weil wir seit den 1970er Jahren Tests wie Schreibtischchecks durchgeführt haben, heißt das nicht, dass es eine gute Idee ist. Messen und bewerten Sie, und entwickeln oder verbessern Sie dann.

@@ -27,3 +27,26 @@ There are currently four co-leaders for the OWASP Top 10. We meet every Friday a
 - [OWASP Top 10 Project Page](https://owasp.org/www-project-top-ten)
 - [OWASP 2017 Summit Outcomes](https://owaspsummit.org/Outcomes/Owasp-Top-10-2017/Owasp-Top-10-2017.html)
  
+
+## Status of review of German translation
+- Notice => Torsten + Vorwort der deutschen Version => Thomas und Torsten :white_check_mark: :checkered_flag:
+- Introduction = Home -> Torsten :white_check_mark: :checkered_flag:
+- How to use the OWASP Top 10 as a standard => Tobias H.  :white_check_mark: :checkered_flag:
+- How to start an AppSec program with the OWASP Top 10 => Daniel G. :white_check_mark: :checkered_flag:
+- About OWASP => Torsten/Thomas :white_check_mark: :checkered_flag:
+- A01 Broken Access Control => Tobias H. :white_check_mark: :checkered_flag:
+- A02 Cryptographic Failures => Jan :white_check_mark: :checkered_flag:
+- A03 Injection => Jasmin (Injection 2017 + XSS 2017) :white_check_mark: :checkered_flag:
+- A04 Insecure Design => Thomas/Torsten :white_check_mark: :checkered_flag:
+- A05 Security Misconfiguration => Florian :white_check_mark: :checkered_flag: 
+- A06 Vulnerable and Outdated Components => Florian :white_check_mark: :checkered_flag: 
+- A07 Identification and Authentication Failures => Daniel :white_check_mark: :checkered_flag:
+- A08 Software and Data Integrity Failures => Tobias H.  :white_check_mark: :checkered_flag:
+- A09 Security Logging and Monitoring Failures => Tobias H.  :white_check_mark: :checkered_flag: 
+- A10 Server Side Request Forgery (SSRF) => Daniel :white_check_mark: :checkered_flag:
+- Next Steps => Daniel :white_check_mark: :checkered_flag:
+
+### Bedeutung Status-flags
+- :white_flag:: Peer-Review fehlt
+- :checkered_flag:: Peer-Review erledigt.
+
